@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global background + typography */
+:root {
+  color-scheme: dark;
+}
+
+body {
+  @apply bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 text-slate-50 antialiased;
+}
+
+/* Prose styling for essays */
+.prose-invert {
+  --tw-prose-body: theme(colors.slate.200);
+  --tw-prose-headings: theme(colors.slate.50);
+  --tw-prose-links: theme(colors.sky.300);
+}

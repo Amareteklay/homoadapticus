@@ -1,0 +1,174 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 400 400"
+  role="img"
+  aria-labelledby="title desc"
+>
+  <title id="title">Abstract A Composition</title>
+  <desc id="desc">
+    A square with diagonal lines and geometric shapes forming an unshaded letter A in negative space.
+  </desc>
+
+  <defs>
+    <linearGradient id="blueToTeal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0066ff" stop-opacity="1" />
+      <stop offset="50%" stop-color="#0099cc" stop-opacity="1" />
+      <stop offset="100%" stop-color="#00cccc" stop-opacity="1" />
+    </linearGradient>
+
+    <linearGradient id="redToOrange" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0066ff" stop-opacity="1" />
+      <stop offset="50%" stop-color="#0099cc" stop-opacity="1" />
+      <stop offset="100%" stop-color="#00cccc" stop-opacity="1" />
+    </linearGradient>
+
+    <linearGradient id="centerTriangle" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff0000" stop-opacity="1" />
+      <stop offset="50%" stop-color="#ff6600" stop-opacity="1" />
+      <stop offset="100%" stop-color="#ff9933" stop-opacity="1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background (transparent square) -->
+  <rect x="0" y="0" width="400" height="400" fill="none" />
+
+  <!-- Diagonal frame lines (A-shaped outer frame) -->
+  <path
+    d="M 0 400 L 196 0 L 204 0 L 400 400 Z"
+    fill="none"
+    stroke="url(#blueToTeal)"
+    stroke-opacity="0.5"
+    stroke-width="20"
+    stroke-linecap="square"
+  />
+
+  <!-- Radiating top lines -->
+  <g fill="none" stroke-linecap="square">
+    <!-- central diagonals -->
+    <path d="M 199 0 L 0 370" stroke="url(#blueToTeal)" stroke-width="0" />
+    <path d="M 205 2 L 400 370" stroke="url(#redToOrange)" stroke-width="0" />
+
+    <!-- horizontal-ish lines from top edges -->
+    <path d="M 400 0 L 205 1" stroke="url(#blueToTeal)" stroke-width="2" />
+    <path d="M 0 0 L 195 1" stroke="url(#redToOrange)" stroke-width="2" />
+
+    <path d="M 400 0 L 215 20" stroke="url(#blueToTeal)" stroke-width="1" />
+    <path d="M 0 0 L 185 20" stroke="url(#redToOrange)" stroke-width="1" />
+
+    <path d="M 400 0 L 225 40" stroke="url(#blueToTeal)" stroke-width="1" />
+    <path d="M 0 0 L 175 40" stroke="url(#redToOrange)" stroke-width="1" />
+
+    <path d="M 400 0 L 235 60" stroke="url(#blueToTeal)" stroke-width="1" />
+    <path d="M 0 0 L 165 60" stroke="url(#redToOrange)" stroke-width="1" />
+
+    <path d="M 400 0 L 245 80" stroke="url(#blueToTeal)" stroke-width="1" />
+    <path d="M 0 0 L 155 80" stroke="url(#redToOrange)" stroke-width="1" />
+
+    <path d="M 400 0 L 255 100" stroke="url(#blueToTeal)" stroke-width="1" />
+    <path d="M 0 0 L 145 100" stroke="url(#redToOrange)" stroke-width="1" />
+
+    <path d="M 400 0 L 265 120" stroke="url(#blueToTeal)" stroke-width="1" />
+    <path d="M 0 0 L 135 120" stroke="url(#redToOrange)" stroke-width="1" />
+
+    <path d="M 400 0 L 275 140" stroke="url(#blueToTeal)" stroke-width="1" />
+    <path d="M 0 0 L 125 140" stroke="url(#redToOrange)" stroke-width="1" />
+
+    <path d="M 400 0 L 285 160" stroke="url(#blueToTeal)" stroke-width="1" />
+    <path d="M 0 0 L 115 160" stroke="url(#redToOrange)" stroke-width="1" />
+
+    <path d="M 400 0 L 295 180" stroke="url(#blueToTeal)" stroke-width="1" />
+    <path d="M 0 0 L 105 180" stroke="url(#redToOrange)" stroke-width="1" />
+
+    <path d="M 400 0 L 305 200" stroke="url(#blueToTeal)" stroke-width="1" />
+    <path d="M 0 0 L 95 200" stroke="url(#redToOrange)" stroke-width="1" />
+
+    <path d="M 400 0 L 315 220" stroke="url(#blueToTeal)" stroke-width="1" />
+    <path d="M 0 0 L 85 220" stroke="url(#redToOrange)" stroke-width="1" />
+
+    <path d="M 400 0 L 325 240" stroke="url(#blueToTeal)" stroke-width="1" />
+    <path d="M 0 0 L 75 240" stroke="url(#redToOrange)" stroke-width="1" />
+
+    <path d="M 400 0 L 335 260" stroke="url(#blueToTeal)" stroke-width="1" />
+    <path d="M 0 0 L 65 260" stroke="url(#redToOrange)" stroke-width="1" />
+
+    <path d="M 400 0 L 345 280" stroke="url(#blueToTeal)" stroke-width="1" />
+    <path d="M 0 0 L 55 280" stroke="url(#redToOrange)" stroke-width="1" />
+
+    <path d="M 400 0 L 355 300" stroke="url(#blueToTeal)" stroke-width="1" />
+    <path d="M 0 0 L 45 300" stroke="url(#redToOrange)" stroke-width="1" />
+
+    <path d="M 400 0 L 365 320" stroke="url(#blueToTeal)" stroke-width="1" />
+    <path d="M 0 0 L 35 320" stroke="url(#redToOrange)" stroke-width="1" />
+
+    <path d="M 400 0 L 375 340" stroke="url(#blueToTeal)" stroke-width="1" />
+    <path d="M 0 0 L 25 340" stroke="url(#redToOrange)" stroke-width="1" />
+
+    <path d="M 400 0 L 385 360" stroke="url(#blueToTeal)" stroke-width="1" />
+    <path d="M 0 0 L 15 360" stroke="url(#redToOrange)" stroke-width="1" />
+
+    <path d="M 400 0 L 395 390" stroke="url(#blueToTeal)" stroke-width="2" />
+    <path d="M 0 0 L 5 390" stroke="url(#redToOrange)" stroke-width="1" />
+  </g>
+
+  <!-- Radiating bottom lines from the inner vertex -->
+  <g
+    fill="none"
+    stroke="url(#redToOrange)"
+    stroke-width="1"
+    stroke-linecap="square"
+  >
+    <path d="M 200 300 L 0 400" />
+    <path d="M 200 300 L 10 400" />
+    <path d="M 200 300 L 20 400" />
+    <path d="M 200 300 L 30 400" />
+    <path d="M 200 300 L 40 400" />
+    <path d="M 200 300 L 50 400" />
+    <path d="M 200 300 L 60 400" />
+    <path d="M 200 300 L 70 400" />
+    <path d="M 200 300 L 80 400" />
+    <path d="M 200 300 L 90 400" />
+    <path d="M 200 300 L 100 400" />
+    <path d="M 200 300 L 110 400" />
+    <path d="M 200 300 L 120 400" />
+    <path d="M 200 300 L 130 400" />
+    <path d="M 200 300 L 140 400" />
+    <path d="M 200 300 L 150 400" />
+    <path d="M 200 300 L 160 400" />
+    <path d="M 200 300 L 170 400" />
+    <path d="M 200 300 L 180 400" />
+    <path d="M 200 300 L 190 400" />
+    <path d="M 200 300 L 200.5 400" />
+    <path d="M 200 300 L 210 400" />
+    <path d="M 200 300 L 220 400" />
+    <path d="M 200 300 L 230 400" />
+    <path d="M 200 300 L 240 400" />
+    <path d="M 200 300 L 250 400" />
+    <path d="M 200 300 L 260 400" />
+    <path d="M 200 300 L 270 400" />
+    <path d="M 200 300 L 280 400" />
+    <path d="M 200 300 L 290 400" />
+    <path d="M 200 300 L 300 400" />
+    <path d="M 200 300 L 310 400" />
+    <path d="M 200 300 L 320 400" />
+    <path d="M 200 300 L 330 400" />
+    <path d="M 200 300 L 340 400" />
+    <path d="M 200 300 L 350 400" />
+    <path d="M 200 300 L 360 400" />
+    <path d="M 200 300 L 370 400" />
+    <path d="M 200 300 L 380 400" />
+    <path d="M 200 300 L 390 400" />
+    <path d="M 200 300 L 400 400" />
+  </g>
+
+  <!-- Central gradient triangle (inner "A" highlight) -->
+  <path
+    d="M 181.945 130.03
+       Q 197.724 104.359 213.504 130.03
+       L 250.85 190.789
+       Q 266.629 216.46 235.071 216.46
+       L 160.378 216.46
+       Q 128.82 216.46 144.599 190.789
+       Z"
+    fill="url(#centerTriangle)"
+  />
+</svg>
