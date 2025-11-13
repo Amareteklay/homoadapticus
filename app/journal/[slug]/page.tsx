@@ -54,7 +54,7 @@ export default async function PostPage({ params }: { params: Params }) {
             </div>
           </header>
 
-          <div className="prose prose-invert prose-slate max-w-none text-sm leading-relaxed">
+          <div className="prose prose-invert prose-adapticus max-w-none">
             <MDXRemote source={content} />
           </div>
         </article>

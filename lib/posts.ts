@@ -10,6 +10,7 @@ export type PostMeta = {
   readTime?: string;
   category?: string;
   featured?: boolean;
+  startHere?: boolean;
 };
 
 const CONTENT_DIR = path.join(process.cwd(), "content", "journal");
@@ -28,7 +29,8 @@ export function getAllPosts(): PostMeta[] {
       date: data.date ?? "",
       readTime: data.readTime,
       category: data.category,
-      featured: data.featured ?? false
+      featured: data.featured ?? false,
+      startHere: data.startHere ?? false,
     } as PostMeta;
   });
 
@@ -39,4 +41,10 @@ export function getFeaturedPosts(limit = 3): PostMeta[] {
   const all = getAllPosts();
   const featured = all.filter((p) => p.featured);
   return (featured.length ? featured : all).slice(0, limit);
+}
+
+export function getStartHerePosts(limit = 3): PostMeta[] {
+  const all = getAllPosts();
+  const start = all.filter((p) => p.startHere);
+  return (start.length ? start : all).slice(0, limit);
 }

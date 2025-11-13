@@ -11,9 +11,108 @@ body {
   @apply bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 text-slate-50 antialiased;
 }
 
-/* Prose styling for essays */
-.prose-invert {
-  --tw-prose-body: theme(colors.slate.200);
-  --tw-prose-headings: theme(colors.slate.50);
-  --tw-prose-links: theme(colors.sky.300);
+/* --- ADAPTICUS PROSE STYLING (for essays) --- */
+
+.prose-adapticus {
+  @apply text-[0.95rem] leading-relaxed sm:text-[1rem] sm:leading-relaxed;
+}
+
+/* Paragraphs */
+.prose-adapticus p {
+  @apply my-4 text-slate-200;
+}
+
+/* Headings */
+.prose-adapticus h1,
+.prose-adapticus h2,
+.prose-adapticus h3,
+.prose-adapticus h4 {
+  @apply font-semibold tracking-tight text-slate-50;
+}
+
+.prose-adapticus h2 {
+  @apply mt-10 mb-3 text-xl;
+}
+
+.prose-adapticus h3 {
+  @apply mt-8 mb-2 text-base;
+}
+
+/* Lists */
+.prose-adapticus ul,
+.prose-adapticus ol {
+  @apply my-4 pl-5 text-slate-200;
+}
+
+.prose-adapticus li {
+  @apply my-1;
+}
+
+/* Links */
+.prose-adapticus a {
+  @apply font-medium text-sky-300 underline decoration-sky-500/50 underline-offset-[3px] hover:text-cyan-200;
+}
+
+/* Horizontal rule */
+.prose-adapticus hr {
+  @apply my-8 border-slate-800;
+}
+
+/* Code */
+.prose-adapticus code {
+  @apply rounded bg-slate-900/80 px-1.5 py-0.5 text-[0.8em] text-emerald-300;
+}
+
+.prose-adapticus pre {
+  @apply my-6 overflow-x-auto rounded-2xl bg-slate-900/90 p-4 text-xs text-slate-100;
+}
+
+/* Blockquotes – IMPORTANT: this is where the "wow" for quotes comes from */
+.prose-adapticus blockquote {
+  @apply my-6 border-l-2 border-sky-400/70 bg-slate-900/60 px-4 py-3 text-sm italic text-slate-100;
+  position: relative;
+}
+
+.prose-adapticus blockquote::before {
+  content: "“";
+  position: absolute;
+  top: -12px;
+  left: 10px;
+  font-size: 2.5rem;
+  line-height: 1;
+  color: rgba(148, 163, 184, 0.35); /* slate-400/35 */
+}
+
+/* Strong emphasis */
+.prose-adapticus strong {
+  @apply font-semibold text-sky-200;
+}
+
+/* Tables (if you ever use them) */
+.prose-adapticus table {
+  @apply my-6 w-full border-collapse text-xs;
+}
+
+.prose-adapticus th,
+.prose-adapticus td {
+  @apply border border-slate-800 px-3 py-2;
+}
+
+.prose-adapticus th {
+  @apply bg-slate-900 text-slate-100;
+}
+
+/* --- Hero orb animation --- */
+@keyframes adapticus-orbit {
+  from {
+    transform: rotate(0deg) translateZ(0);
+  }
+  to {
+    transform: rotate(360deg) translateZ(0);
+  }
+}
+
+.adapticus-orb {
+  animation: adapticus-orbit 38s linear infinite;
+  transform-origin: center;
 }

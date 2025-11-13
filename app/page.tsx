@@ -1,16 +1,19 @@
 import Link from "next/link";
 import { PageShell } from "@/components/layout/page-shell";
-import { getFeaturedPosts } from "@/lib/posts";
+import { getFeaturedPosts, getStartHerePosts } from "@/lib/posts";
 import { PostCard } from "@/components/journal/post-card";
 
 export const dynamic = "force-static";
 
-export default async function HomePage() {
+export default function HomePage() {
   const featured = getFeaturedPosts();
+  const startHere = getStartHerePosts();
 
   return (
     <PageShell maxWidth="max-w-6xl">
+      {/* Hero */}
       <div className="grid items-center gap-10 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)]">
+        {/* Left: text */}
         <div className="space-y-6">
           <span className="inline-flex items-center rounded-full border border-slate-700 px-3 py-1 text-xs uppercase tracking-[0.22em] text-slate-400">
             Homo Adapticus • Journal of Intelligent Change
@@ -44,8 +47,10 @@ export default async function HomePage() {
             No spam. Just thoughtful signals in a noisy world.
           </p>
         </div>
+
+        {/* Right: animated orb visual */}
         <div className="relative flex items-center justify-center">
-          <div className="relative h-72 w-72 sm:h-80 sm:w-80">
+          <div className="relative h-72 w-72 sm:h-80 sm:w-80 adapticus-orb">
             <div className="absolute inset-0 rounded-full bg-gradient-to-br from-sky-500/40 via-cyan-400/20 to-violet-500/30 blur-2xl" />
             <div className="absolute inset-[18%] rounded-[40%] border border-slate-600/60 bg-slate-900/60 backdrop-blur-xl shadow-[0_0_60px_rgba(56,189,248,0.35)]" />
             <div className="absolute inset-[32%] rounded-full border border-sky-400/60" />
@@ -57,6 +62,25 @@ export default async function HomePage() {
         </div>
       </div>
 
+      {/* Start Here section */}
+      <div className="mt-16 space-y-6">
+        <div className="space-y-2">
+          <h2 className="text-sm font-semibold uppercase tracking-[0.22em] text-slate-400">
+            New here?
+          </h2>
+          <p className="max-w-xl text-sm text-slate-300">
+            A few essays that give you the shape of Homo Adapticus: the
+            philosophy, the inner work, and the systems view.
+          </p>
+        </div>
+        <div className="grid gap-6 md:grid-cols-3">
+          {startHere.map((post) => (
+            <PostCard key={post.slug} post={post} />
+          ))}
+        </div>
+      </div>
+
+      {/* Featured posts */}
       <div className="mt-16 space-y-6">
         <div className="flex items-center justify-between gap-4">
           <h2 className="text-sm font-semibold uppercase tracking-[0.22em] text-slate-400">
