@@ -24,7 +24,7 @@ export function SiteFooter() {
             <Link href="/" className="flex items-center gap-2">
               <div className="relative h-7 w-7">
                 <Image
-                  src="/homoadapticus-logo.png" // or .svg, match your actual file
+                  src="/homoadapticus-logo.svg"
                   alt="Homo Adapticus logo"
                   fill
                   sizes="28px"
